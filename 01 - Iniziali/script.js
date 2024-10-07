@@ -4,9 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function initials(namesArray){
+    return namesArray.map(name => name.charAt(0));
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+const result = initials(names);
+console.log(result);
 
 
 
