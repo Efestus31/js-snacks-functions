@@ -4,9 +4,14 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function filteredNamesWithLetter(array, letter){
+    return array.filter(name => name.startsWith(letter));
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+const filterNames = filteredNamesWithLetter(names, 'A');
+console.log(filterNames);
+
 
 
 
